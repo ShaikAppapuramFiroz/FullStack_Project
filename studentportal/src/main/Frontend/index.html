@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+         header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #f1f1f1;
+        }
+
+        .header-buttons {
+            margin-top: 20px;
+        }
+
+        .header-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 25px;
+            font-size: 1rem;
+            color: white;
+            background-color: #0056b3;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .header-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-buttons">
+            <h1>Student Details of 3rd Year Information Technology</h1>
+            <a href="login.html"><button class="header-button">Update Studentdb </button></a>
+            <input type="text" id="rollNo" placeholder="Enter Roll No">
+            <button id="searchButton">
+                <span class="search-icon">🔍</span>
+            </button>
+        </div>
+    </header>
+    
+    <div>
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll Number</th>
+                    <th>Contact</th>
+                    <th>Branch</th>
+                    <th>Section</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
